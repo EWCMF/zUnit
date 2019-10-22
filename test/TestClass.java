@@ -20,12 +20,12 @@ public class TestClass extends TestSuite {
 
     public void testDoublePassed() {
         double result = 7.6;
-        assertEquals(7.6, result);
+        assertEquals(7.6, result, 0.001);
     }
 
     public void testDoubleFailed() {
         double result = 5.1;
-        assertEquals(1.1, result);
+        assertEquals(1.1, result, 0.001);
     }
 
     public void testStringPassed() {

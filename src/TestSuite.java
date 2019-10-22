@@ -25,8 +25,8 @@ public abstract class TestSuite {
         }
     }
 
-    public void assertEquals(double expected, double actual) {
-        if (expected == actual) {
+    public void assertEquals(double expected, double actual, double delta) {
+        if (actual >= expected - delta && actual <= expected + delta) {
             passed++;
         }
         else {
